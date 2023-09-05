@@ -48,6 +48,7 @@
                         displayMahasiswaName(data.data);
                     }
                 });
+
                 
             }
 
