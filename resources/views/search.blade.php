@@ -49,7 +49,7 @@
                     }
                 });
 
-                
+
             }
 
             loadAllNamaMahasiswa();
@@ -59,16 +59,11 @@
                 if (keyword === "") {
                     loadAllNamaMahasiswa();
                 } else {
-                    $.ajax({
-                        url: '/api/searching?keyword=' + keyword,
-                        type: 'GET',
-                        success: function(response) {
-                            console.log('success')
-                            displayMahasiswaName(response.data);
-                        }
-                    });
+                    let redirectUrl = '/book?keyword=' + encodeURIComponent(keyword);
+                    window.location.href = redirectUrl;
                 }
             });
+
         });
     </script>
 </body>

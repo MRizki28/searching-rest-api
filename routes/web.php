@@ -21,3 +21,12 @@ Route::get('/searching2', function () {
     return view('search');
 });
 
+Route::get('/book', function () {
+    return view('book-searching');
+});
+
+
+
+
+
+
